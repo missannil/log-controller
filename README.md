@@ -1,6 +1,6 @@
 # log-controller
 
-这是一个 VS Code 插件，用于管理控制台日志注释。
+这是一个 VS Code 插件，用于管理控制台日志。
 
 ## 支持的语言
 
@@ -8,9 +8,9 @@
 
 ## 功能
 
-- 使用快捷键 `Ctrl+R Ctrl+E` 或 `Cmd+R Cmd+E` 注释或解除注释。
+- 使用快捷键 `Ctrl+R Ctrl+E` 或 `Cmd+R Cmd+E` 注释或解除全部注释。
 - 使用快捷键 `Ctrl+R Ctrl+A` 或 `Cmd+R Cmd+A` 添加注释。
-- 使用快捷键 `Ctrl+R Ctrl+R` 或 `Cmd+R Cmd+R` 删除当前文件最大索引的日志。
+- 使用快捷键 `Ctrl+R Ctrl+R` 或 `Cmd+R Cmd+R` 删除当前文件最大索引标记的日志。
 - 使用快捷键 `Ctrl+R Ctrl+R` 或 `Cmd+R Cmd+F` 删除当前文件所有添加的日志。
 
 ## 安装
