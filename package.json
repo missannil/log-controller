@@ -1,0 +1,78 @@
+{
+  "name": "log-controller",
+  "displayName": "HRY Log Controller",
+  "description": "A VS Code extension for managing console log comments by HRY",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/missannil/log-controller.git"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "logController.toggleComments",
+        "title": "Toggle Log Comments"
+      },
+      {
+        "command": "logController.addLog",
+        "title": "Add Log"  
+      },
+      {
+        "command": "logController.removeLog",
+        "title": "Remove Log"
+      },
+      {
+        "command": "logController.removeAllLogs",
+        "title": "Remove All Logs"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "logController.toggleComments",
+        "win": "ctrl+r ctrl+e",
+        "mac": "cmd+r cmd+e",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "logController.addLog",
+        "win": "ctrl+r ctrl+a",
+        "mac": "cmd+r cmd+a",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "logController.removeLog",
+        "win": "ctrl+r ctrl+r",
+        "mac": "cmd+r cmd+r",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "logController.removeAllLogs",
+        "win": "ctrl+r ctrl+f",
+        "mac": "cmd+r cmd+f",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -w -p ./",
+    "lint": "eslint src"
+  },
+  "devDependencies": {
+    "@types/node": "20.x",
+    "@types/vscode": "^1.98.0",
+    "@typescript-eslint/eslint-plugin": "^8.25.0",
+    "@typescript-eslint/parser": "^8.25.0",
+    "eslint": "^9.21.0",
+    "typescript": "^5.7.3"
+  }
+}
